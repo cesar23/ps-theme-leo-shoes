@@ -1,0 +1,55 @@
+/**
+* Transition-timing-function property@mixin 
+*/
+/*background RGBA
+============================================*/
+/****/
+/* RIGHT TO LEFT */
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+/** CHECKOUT BY STEP */
+#leo_block_top .languages-block,
+#leo_block_top #setCurrency {
+  padding: 5px 10px;
+}
+#leo_block_top .languages-block span,
+#leo_block_top #setCurrency span {
+  color: #787878;
+}
+#leo_block_top ul {
+  padding: 0;
+}
+#leo_block_top ul li {
+  padding: 2px 5px 2px 0;
+  text-align: left;
+  display: inline-block;
+  /* @include rtl-float-left(); */
+}
+.rtl #leo_block_top ul li {
+  padding: 2px 0 2px 5px;
+}
+.rtl #leo_block_top ul li {
+  text-align: right;
+}
+#leo_block_top ul li.selected a {
+  color: #e24647 !important;
+}
+#leo_block_top ul li.selected_language img {
+  padding: 1px;
+  width: 18px;
+  height: 14px;
+  border: 1px solid #e24647;
+}
+#leo_block_top ul li:last-child {
+  border-right: none;
+  border-bottom: none;
+}
+.rtl #leo_block_top ul li:last-child {
+  border-left: none;
+  border-right: inherit;
+}

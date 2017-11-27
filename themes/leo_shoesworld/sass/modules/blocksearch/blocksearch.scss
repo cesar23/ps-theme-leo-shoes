@@ -1,0 +1,52 @@
+@import "compass";
+@import "theme_variables";
+
+ 
+.ac_results {
+	background: $light-background;
+	border: $main-border;
+	width: 271px;
+	margin-top: -1px;
+	li {
+		padding: 0 10px;
+		font-weight: normal;
+		color: $text-color;
+		line-height: 22px;
+		&.ac_odd {
+			background: $light-background;
+		}
+		&:hover, &.ac_over { 
+		}
+	}
+}	
+#search_block_top{position: relative;
+	.fa-search{
+		&:hover{cursor: pointer;}
+	}
+}
+form#searchbox { 
+    width: 282px; 
+    z-index: 10; 
+	label {
+		color: $text-color;
+	}
+	input.search_query { 
+		max-width: 219px; 
+		border: none;
+		@include box-shadow(none);
+		@include rtl-float-left();
+		@include border-radius(0);
+	}
+	.btn {
+		float:left; 
+		border: none;
+		height: 35px;
+		color: $white;
+		line-height: 23px;
+		background: $theme-color-default;
+		@include border-radius(2px);
+		&:hover {
+			background: $theme-color-secondary;
+		}
+	}
+}

@@ -1,0 +1,150 @@
+@import "compass";
+@import "theme_variables";
+
+/**********************************
+HOME PAGE 3
+**********************************/
+// footer-center
+#footer {
+	padding-top: 70px;
+}
+// block cart
+#cart .heading {
+	@include rtl-margin(22px,10px,31px,10px);
+}
+/* header-top ********************/
+#header-main {
+	background: #F3F3F3;
+	border-bottom: $main-border;
+}
+
+// menu
+.menu-static {
+	position: static;
+	.leo-megamenu {position: static;}
+}
+#leo-megamenu {
+	.navbar-nav {
+		> li {
+			> a {
+				padding: 31px 8px;
+			}
+		}
+	}
+}
+/* product ************************/
+.product-block {
+	.price {
+		font-size: 14px;
+	}
+}
+/* Appagebuilder *****************/
+
+.owl-theme {
+	.owl-controls {
+		.owl-page {
+			span {
+				background: #aaa;
+				@include box-shadow(0 -1px 0 1px #aaa);
+			}
+		}
+	}
+}
+
+// HTML
+.ApRawHtml {
+  .media {
+    .icon-box {
+      .fa {
+      	font-size: 26px;
+      	color: $theme-color-default;
+      }
+    }
+    h4 {
+    	margin-bottom: 5px;
+    	font-size: 15px;
+    	font-weight: 600;
+    	font-family: $font-family-base;
+    }
+  }
+}
+
+// box-services
+.media > .icon-box.pull-left {@include rtl-margin-right(20px);}
+
+/* Responsive *****************/
+@media (max-width: $screen-sm-max) { // max 991px
+	// owl-carousel
+	.owl-theme .owl-controls .owl-buttons div {
+		top: 0; 
+		width: 44px; 
+		height: 44px;
+		line-height: 34px;
+		left: 43%;
+		&.owl-next {right: 43%;}
+	}
+}
+@media (max-width: $screen-xs-max) { // max 767px
+	// product carousel
+	.productcarousel-layout3 {
+		margin-top: 40px;
+	}
+	// owl-carousel
+	.owl-theme .owl-controls .owl-buttons div {left: 41.5%;}
+	.owl-theme .owl-controls .owl-buttons div.owl-next {right: 41.5%;}
+}
+@media (max-width: $screen-xs) {
+	.owl-theme .owl-controls .owl-buttons div {left: 39%;}
+	.owl-theme .owl-controls .owl-buttons div.owl-next {right: 39%;}
+}
+@media (max-width: $screen-xs - 1) { // max 479px
+	.owl-theme .owl-controls .owl-buttons div {left: 33%;}
+	.owl-theme .owl-controls .owl-buttons div.owl-next {right: 33%;}
+}
+
+/* skin *****************/
+
+$brown: #8c817a;
+$orange: #f36611;
+
+.brown {
+	// HTML
+	.ApRawHtml {
+	  .media {
+	  	a {
+	      &:hover {
+	        color: $brown;
+	      }
+	    }
+	    .icon-box {
+	      .fa {
+	      	color: $brown;
+	      }
+	    }
+	  }
+	}
+}
+
+.orange {
+	// HTML
+	.ApRawHtml {
+	  .media {
+	  	a {
+	      &:hover {
+	        color: $orange;
+	      }
+	    }
+	    .icon-box {
+	      .fa {
+	      	color: $orange;
+	      }
+	    }
+	  }
+	}
+}
+
+/* RTL *****************/
+.rtl {
+	#layer_cart {right: inherit;}
+}
+

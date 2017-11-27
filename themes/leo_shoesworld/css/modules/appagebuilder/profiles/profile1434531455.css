@@ -1,0 +1,163 @@
+/**
+* Transition-timing-function property@mixin 
+*/
+/*background RGBA
+============================================*/
+/****/
+/* RIGHT TO LEFT */
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+/** CHECKOUT BY STEP */
+/****************************************************
+HOME PAGE 2
+****************************************************/
+/*base *********************************************/
+a:hover, a:focus {
+  color: #e24647;
+}
+
+/* prestashop page *********************************/
+/* Carousel button *********************************/
+.owl-theme .owl-controls .owl-buttons div {
+  left: -9px;
+}
+.owl-theme .owl-controls .owl-buttons div.owl-next {
+  right: -9px;
+}
+
+/* BREADCRUMB **************************************/
+/* Form search *************************************/
+/* Contact Link ************************************/
+/* Menu Top ****************************************/
+/* Menu Sidebar ************************************/
+/* Appagebuilder ***********************************/
+.widget-category_image > .title_block {
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 80px;
+}
+.widget-category_image .description {
+  height: 73px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.widget-category_image .link_visit a {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.widget-category_image .img_cate img {
+  display: inline-block;
+}
+
+#group-line {
+  margin-top: 60px;
+  padding: 210px 0 0;
+  position: relative;
+}
+#group-line:before {
+  left: 0;
+  right: 0;
+  position: absolute;
+  content: "";
+  margin: 0 auto;
+  text-align: center;
+  top: 0;
+  width: 1px;
+  height: 150px;
+  border-left: 1px dashed #DDD;
+}
+
+.group-box1 #group-line {
+  margin-top: 15px;
+}
+
+.custom-carousel .block_carousel {
+  width: 68%;
+  padding: 18px;
+  margin: 0 auto;
+  background: #f5f5f5;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 3px 5px 0 #b3b3b3;
+  box-shadow: 0 3px 5px 0 #b3b3b3;
+}
+.custom-carousel .block_carousel img {
+  position: relative;
+}
+.custom-carousel .block_carousel .descript {
+  top: 10px;
+  position: absolute;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  color: #272727;
+  left: 25px;
+}
+.rtl .custom-carousel .block_carousel .descript {
+  right: 25px;
+  left: auto;
+}
+.custom-carousel .block_carousel .descript .text1 {
+  margin-bottom: 0;
+}
+.custom-carousel .block_carousel .descript .text2 {
+  font-size: 24px;
+}
+.custom-carousel .owl-carousel .owl-item {
+  padding: 0;
+}
+
+.productcarousel-layout2 .product-desc,
+.productcarousel-layout3 .product-desc {
+  display: none;
+}
+.productcarousel-layout2.products_block .owl-carousel .owl-wrapper-outer,
+.productcarousel-layout3.products_block .owl-carousel .owl-wrapper-outer {
+  padding: 0;
+}
+
+#footer .footer-center #newsletter_block_left {
+  margin: 30px 0 10px;
+}
+#footer .footer-center #social_block {
+  margin-bottom: 30px;
+}
+#footer .footer-center #social_block:before, #footer .footer-center #social_block:after {
+  background: none;
+}
+#footer .footer-nav {
+  margin-top: 0;
+}
+
+/* Product Item **************************************/
+/* Product Page **************************************/
+/* Form Newsletter ***********************************/
+/* Slideshow *****************************************/
+/* Responsive ****************************************/
+@media (max-width: 480px) {
+  .custom-carousel .block_carousel {
+    width: 100%;
+  }
+
+  .group-box1 #group-line {
+    padding: 0;
+  }
+  .group-box1 #group-line:before {
+    border: none;
+  }
+
+  .widget-category_image > .title_block {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
+/* skin *****************************************/

@@ -1,0 +1,44 @@
+.carousel-control{
+  z-index: 10;
+  width: 56px;
+  height: 56px;
+  line-height: 46px; 
+  top: 42%;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: none;
+  position: absolute;
+  left: 0;
+  background: $theme-color-default !important;
+  @include opacity(1);
+  @include border-radius(50px);
+  /* &:before{
+    position: absolute;
+    content: "\f105"; // "\f104"
+    font-family: $font-icon;
+    top: -7px;
+    left: 0;
+    color: #b3b3b3;
+    font-size: 35px;
+    text-shadow: none;
+  } */
+  &.right {
+    right: 0;
+    left: auto;
+  }
+}
+
+// button
+.btn {
+  @include border-radius(0);
+}
+//@mixin button-variant-outline($color, $background, $border, $colorhover, $bghover, $borderhover ) {
+.btn-inverse{
+  @include border-radius(0);
+  @include button-variant-outline($white, $theme-color-default, $theme-color-default, $theme-color-tertiary, $nocolor , $theme-color-tertiary );
+} 
+.btn-outline{
+  @include border-radius(0);
+  @include button-variant-outline($theme-color-tertiary, $nocolor , $theme-color-tertiary , $white, $theme-color-default, $theme-color-default );
+}

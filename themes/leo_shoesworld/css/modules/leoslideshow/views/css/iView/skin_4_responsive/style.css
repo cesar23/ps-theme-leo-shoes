@@ -1,0 +1,112 @@
+/**
+* Transition-timing-function property@mixin 
+*/
+/*background RGBA
+============================================*/
+/****/
+/* RIGHT TO LEFT */
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+/** CHECKOUT BY STEP */
+.container {
+  display: block;
+  margin: 0px auto;
+}
+
+#iview {
+  display: block;
+  min-width: 300px;
+  background: #000;
+  background: rgba(0, 0, 0, 0.7);
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+#iview .iviewSlider {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+#iview div.iview-directionNav {
+  position: absolute;
+  top: 47%;
+  left: 0px;
+  z-index: 9;
+  width: 100%;
+}
+#iview div.iview-directionNav a {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+#iview div.iview-directionNav a.iview-nextNav {
+  right: -38px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition: right 0.3s ease-in-out;
+  transition: right 0.3s ease-in-out;
+}
+#iview div.iview-directionNav a.iview-prevNav {
+  left: -38px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition: left 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out;
+}
+#iview.iview-hover div.iview-directionNav a.iview-nextNav {
+  right: 55px;
+}
+#iview.iview-hover div.iview-directionNav a.iview-prevNav {
+  left: 55px;
+}
+
+.iview-directionNav a {
+  border: 2px solid black;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  zoom: 1;
+  background-color: transparent\9;
+}
+.iview-directionNav a:before {
+  font-size: 18px;
+  color: black;
+}
+.iview-directionNav a:hover {
+  background: #e24647;
+}
+.iview-directionNav a:hover:before {
+  color: white;
+}
+
+.tp-caption.data-link:hover {
+  cursor: pointer;
+}
+
+#iview-preloader {
+  border: #666 1px solid;
+  width: 150px;
+}
+
+#iview-preloader div {
+  background: #666;
+}
+
+#iview-timer {
+  border-radius: 10px;
+}
+
+#iview-timer div {
+  border-radius: 10px;
+}

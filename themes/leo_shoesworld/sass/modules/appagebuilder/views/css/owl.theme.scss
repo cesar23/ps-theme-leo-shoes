@@ -1,0 +1,90 @@
+@import "compass";
+@import "theme_variables";
+
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.3
+*/
+.owl-row {
+	margin: 0 -15px; 
+}
+
+.owl-carousel {
+	.owl-item {
+		padding: 0 9px;
+	}
+}
+
+/* Styling Pagination*/
+.owl-theme {
+	.owl-controls {
+		text-align: center;
+		&.clickable { /* Use it for non-touch hover action */
+			.owl-buttons {
+				div {
+					&:hover {
+						@include opacity(1);
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		.owl-pagination {padding: 10px 0 5px;}
+		.owl-page {
+			display: inline-block;
+			zoom: 1;
+			*display: inline;/*IE7 life-saver */
+			span{
+				display: block;
+				background: $white;
+				margin: 0 4px;
+				@include border-radius(50px);
+				@include box-shadow(0 -1px 0 1px #cdcdcd);
+				&.owl-numbers { /* If PaginationNumbers is true */
+					height: 12px;
+					width: 12px;
+					color: #FFF;
+					font-size: 0;
+					@include border-radius(50px);
+				}
+			}
+			&.active,
+			&:hover {
+				span {
+					background: $theme-color-default;
+					@include box-shadow(0 -1px 0 1px #c4362b);
+				}
+			}
+		}
+		.owl-buttons {
+			div { /* Styling Next and Prev buttons */
+				position: absolute;
+				top: 35%;
+				left: -30px;
+				height: 56px;
+				width: 56px;
+				color: $white;
+				font-size: 40px;
+			  	line-height: 46px;
+			  	font-weight: 300;
+			  	font-family: $font-family-base;
+			  	background: $theme-color-default;
+				@include border-radius(50px);
+				&.owl-next{
+				    right: -30px;
+				    left: auto;
+				}
+				&:hover{
+					color: #FFF;
+				    background: $theme-color-secondary;
+				}
+			}
+		}
+	}
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(../img/AjaxLoader.gif) no-repeat center center
+}

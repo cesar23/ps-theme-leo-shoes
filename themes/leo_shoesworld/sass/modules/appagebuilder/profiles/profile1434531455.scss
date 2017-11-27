@@ -1,0 +1,179 @@
+@import "compass";
+@import "theme_variables";
+
+
+/****************************************************
+HOME PAGE 2
+****************************************************/
+$theme-color-default: #e24647;
+
+/*base *********************************************/
+a{
+    &:hover,
+    &:focus {
+        color: $theme-color-default;
+    }
+}
+/* prestashop page *********************************/
+
+/* Carousel button *********************************/
+.owl-theme {
+  .owl-controls {
+    .owl-buttons {
+      div {
+        left: -9px;
+        &.owl-next {
+          right: -9px;
+        }
+      }
+    }
+  }
+}
+/* BREADCRUMB **************************************/
+
+/* Form search *************************************/
+
+/* Contact Link ************************************/
+
+/* Menu Top ****************************************/
+
+/* Menu Sidebar ************************************/
+
+/* Appagebuilder ***********************************/
+// category_image
+.widget-category_image {
+  > .title_block {
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 80px;
+  }
+  .description {
+    height: 73px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .link_visit {
+    a {
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
+  .img_cate {
+    img {display: inline-block;}
+  }
+}
+
+// group-line
+#group-line {
+  margin-top: 60px;
+  padding: 210px 0 0;
+  position: relative;
+  &:before{
+    left: 0;
+    right: 0;
+    position: absolute;
+    content: "";
+    margin: 0 auto;
+    text-align: center;
+    top: 0;
+    width: 1px;
+    height: 150px;
+    border-left: 1px dashed #DDD;
+  }
+}
+.group-box1 {
+  #group-line {margin-top: 15px;}
+}
+
+// custom-carousel
+.custom-carousel {
+  .block_carousel {
+    width: 68%;
+    padding: 18px;
+    margin: 0 auto;
+    background: #f5f5f5;
+    @include border-radius(10px);
+    @include box-shadow(0 3px 5px 0 #b3b3b3);
+    img {
+      position: relative;
+    }
+    .descript {
+      top: 10px;
+      position: absolute;
+      font-weight: 700;
+      font-family: $font-family-base;
+      text-transform: uppercase;
+      color: $theme-color-tertiary;
+      @include rtl-left(25px);
+      .text1 {
+        margin-bottom: 0;
+      }
+      .text2 {
+        font-size: 24px; 
+      }
+    }
+  }
+  .owl-carousel .owl-item {padding: 0;}
+}
+
+// productcarousel-layout2
+.productcarousel-layout2,
+.productcarousel-layout3 {
+  .product-desc {display: none;}
+  &.products_block .owl-carousel .owl-wrapper-outer {padding: 0;}
+}
+
+// footer-center
+#footer {
+  .footer-center {
+    #newsletter_block_left {margin: 30px 0 10px;}
+    #social_block {
+      margin-bottom: 30px;
+      &:before,
+      &:after {background: none;}
+    }
+  }
+  .footer-nav {margin-top: 0;}
+}
+/* Product Item **************************************/
+
+/* Product Page **************************************/
+
+/* Form Newsletter ***********************************/
+
+/* Slideshow *****************************************/
+
+/* Responsive ****************************************/
+@media (max-width: $screen-sm-max - 1) { // max 990px
+
+}
+@media (max-width: $screen-xs-max + 1) { // max 768px
+
+}
+@media (max-width: $screen-xs-max) { // max 767px
+  
+}
+@media (max-width: $screen-xs) {
+  .custom-carousel {
+    .block_carousel {width: 100%;}
+  }
+  .group-box1 {
+    #group-line {
+      padding: 0;
+      &:before {border: none;}
+    }
+  }
+  // category_image
+  .widget-category_image {
+    > .title_block {
+      font-size: 30px;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+  }
+}
+@media (max-width: $screen-xs - 1) { // max 479px
+  
+}
+
+/* skin *****************************************/

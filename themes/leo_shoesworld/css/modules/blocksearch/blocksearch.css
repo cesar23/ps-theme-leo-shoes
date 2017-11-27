@@ -1,0 +1,76 @@
+/**
+* Transition-timing-function property@mixin 
+*/
+/*background RGBA
+============================================*/
+/****/
+/* RIGHT TO LEFT */
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+/** CHECKOUT BY STEP */
+.ac_results {
+  background: white;
+  border: 1px solid #dddddd;
+  width: 271px;
+  margin-top: -1px;
+}
+.ac_results li {
+  padding: 0 10px;
+  font-weight: normal;
+  color: #8a8a8a;
+  line-height: 22px;
+}
+.ac_results li.ac_odd {
+  background: white;
+}
+
+#search_block_top {
+  position: relative;
+}
+#search_block_top .fa-search:hover {
+  cursor: pointer;
+}
+
+form#searchbox {
+  width: 282px;
+  z-index: 10;
+}
+form#searchbox label {
+  color: #8a8a8a;
+}
+form#searchbox input.search_query {
+  max-width: 219px;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  float: left;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+.rtl form#searchbox input.search_query {
+  float: right;
+}
+form#searchbox .btn {
+  float: left;
+  border: none;
+  height: 35px;
+  color: white;
+  line-height: 23px;
+  background: #e24647;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+form#searchbox .btn:hover {
+  background: #00bcd4;
+}

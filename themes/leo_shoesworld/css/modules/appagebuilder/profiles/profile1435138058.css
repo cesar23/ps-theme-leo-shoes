@@ -1,0 +1,140 @@
+/**
+* Transition-timing-function property@mixin 
+*/
+/*background RGBA
+============================================*/
+/****/
+/* RIGHT TO LEFT */
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+/** CHECKOUT BY STEP */
+/**********************************
+HOME PAGE 3
+**********************************/
+#footer {
+  padding-top: 70px;
+}
+
+#cart .heading {
+  margin: 22px 10px 31px 10px;
+}
+.rtl #cart .heading {
+  margin: 22px 10px 31px 10px;
+}
+
+/* header-top ********************/
+#header-main {
+  background: #F3F3F3;
+  border-bottom: 1px solid #dddddd;
+}
+
+.menu-static {
+  position: static;
+}
+.menu-static .leo-megamenu {
+  position: static;
+}
+
+#leo-megamenu .navbar-nav > li > a {
+  padding: 31px 8px;
+}
+
+/* product ************************/
+.product-block .price {
+  font-size: 14px;
+}
+
+/* Appagebuilder *****************/
+.owl-theme .owl-controls .owl-page span {
+  background: #aaa;
+  -webkit-box-shadow: 0 -1px 0 1px #aaaaaa;
+  box-shadow: 0 -1px 0 1px #aaaaaa;
+}
+
+.ApRawHtml .media .icon-box .fa {
+  font-size: 26px;
+  color: #e24647;
+}
+.ApRawHtml .media h4 {
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+}
+
+.media > .icon-box.pull-left {
+  margin-right: 20px;
+}
+.rtl .media > .icon-box.pull-left {
+  margin-left: 20px;
+  margin-right: inherit;
+}
+
+/* Responsive *****************/
+@media (max-width: 991px) {
+  .owl-theme .owl-controls .owl-buttons div {
+    top: 0;
+    width: 44px;
+    height: 44px;
+    line-height: 34px;
+    left: 43%;
+  }
+  .owl-theme .owl-controls .owl-buttons div.owl-next {
+    right: 43%;
+  }
+}
+@media (max-width: 767px) {
+  .productcarousel-layout3 {
+    margin-top: 40px;
+  }
+
+  .owl-theme .owl-controls .owl-buttons div {
+    left: 41.5%;
+  }
+
+  .owl-theme .owl-controls .owl-buttons div.owl-next {
+    right: 41.5%;
+  }
+}
+@media (max-width: 480px) {
+  .owl-theme .owl-controls .owl-buttons div {
+    left: 39%;
+  }
+
+  .owl-theme .owl-controls .owl-buttons div.owl-next {
+    right: 39%;
+  }
+}
+@media (max-width: 479px) {
+  .owl-theme .owl-controls .owl-buttons div {
+    left: 33%;
+  }
+
+  .owl-theme .owl-controls .owl-buttons div.owl-next {
+    right: 33%;
+  }
+}
+/* skin *****************/
+.brown .ApRawHtml .media a:hover {
+  color: #8c817a;
+}
+.brown .ApRawHtml .media .icon-box .fa {
+  color: #8c817a;
+}
+
+.orange .ApRawHtml .media a:hover {
+  color: #f36611;
+}
+.orange .ApRawHtml .media .icon-box .fa {
+  color: #f36611;
+}
+
+/* RTL *****************/
+.rtl #layer_cart {
+  right: inherit;
+}
